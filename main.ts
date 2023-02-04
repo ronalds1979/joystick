@@ -25,5 +25,6 @@ joystickbit.onButtonEvent(joystickbit.JoystickBitPin.P12, joystickbit.ButtonType
 joystickbit.initJoystickBit()
 joystickbit.Vibration_Motor(100)
 basic.forever(function () {
-    radio.sendNumber(joystickbit.getRockerValue(joystickbit.rockerType.X))
+    radio.sendValue("X", joystickbit.getRockerValue(joystickbit.rockerType.X))
+    radio.sendValue("Y", joystickbit.getRockerValue(joystickbit.rockerType.Y))
 })
