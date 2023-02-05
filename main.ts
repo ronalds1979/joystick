@@ -31,6 +31,6 @@ joystickbit.Vibration_Motor(100)
 radio.setGroup(7)
 radio.sendNumber(7)
 basic.forever(function () {
-    radio.sendValue("X", joystickbit.getRockerValue(joystickbit.rockerType.X) / 10)
-    radio.sendValue("Y", joystickbit.getRockerValue(joystickbit.rockerType.Y) / 10)
+    radio.sendValue("x", joystickbit.getRockerValue(joystickbit.rockerType.X))
+    radio.sendValue("y", joystickbit.getRockerValue(joystickbit.rockerType.Y))
 })
