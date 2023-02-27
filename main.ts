@@ -27,7 +27,12 @@ joystickbit.onButtonEvent(joystickbit.JoystickBitPin.P12, joystickbit.ButtonType
     radio.sendNumber(1)
 })
 joystickbit.initJoystickBit()
-joystickbit.Vibration_Motor(100)
+joystickbit.Vibration_Motor(200)
+music.playSoundEffect(music.builtinSoundEffect(soundExpression.hello), SoundExpressionPlayMode.UntilDone)
+basic.showIcon(IconNames.SmallHeart)
+basic.showIcon(IconNames.Heart)
+basic.showIcon(IconNames.SmallHeart)
+basic.showIcon(IconNames.Heart)
 radio.setGroup(7)
 radio.sendNumber(7)
 basic.forever(function () {
